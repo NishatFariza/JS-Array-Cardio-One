@@ -21,4 +21,14 @@
       'Benn, Tony', 'Benson, Leana', 'Bent, Silas', 'Berle, Milton', 'Berry, Halle', 'Biko, Steve', 'Beck, Glenn', 'Bergman, Ingmar', 'Black, Elk', 'Berio, Luciano',
       'Berne, Eric', 'Berra, Yogi', 'Berry, Wendell', 'Bevan, Aneurin', 'Ben-Gurion, David', 'Bevel, Ken', 'Biden, Joseph', 'Bennington, Chester', 'Bierce, Ambrose',
       'Billings, Josh', 'Birrell, Augustine', 'Blair, Tony', 'Beecher, Henry', 'Biondo, Frank'
-    ];
+];
+    
+    
+//return a array where every element fullName & age
+const nameAge = inventors.map(inventor => {
+    const fullName = inventor.first + " " + inventor.last;
+    const age = inventor.passed - inventor.year;
+    return { fullName, age };
+    
+})
+console.log(nameAge)
