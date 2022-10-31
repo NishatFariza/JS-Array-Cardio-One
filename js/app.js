@@ -43,3 +43,7 @@ const fifteen = inventors.filter(inventor => {
 })
 
 console.table(fifteen)
+
+
+ // Array.prototype.sort()
+// 3. Sort the inventors by birth date, oldest to youngest
