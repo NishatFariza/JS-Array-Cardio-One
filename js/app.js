@@ -24,7 +24,7 @@
 ];
     
     
-//return a array where every element fullName & age
+// 1. return a array where every element fullName & age
 const nameAge = inventors.map(inventor => {
     const fullName = inventor.first + " " + inventor.last;
     const age = inventor.passed - inventor.year;
@@ -32,3 +32,14 @@ const nameAge = inventors.map(inventor => {
     
 })
 console.log(nameAge)
+
+
+// Array.prototype.filter()
+// 2. Filter the list of inventors for those who were born in the 1500's
+const fifteen = inventors.filter(inventor => {
+    if (inventor.year >= 1500 && inventor.year < 1600) {
+        return true;
+    }
+})
+
+console.table(fifteen)
