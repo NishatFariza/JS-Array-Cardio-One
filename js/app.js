@@ -52,6 +52,8 @@ const ordered = inventors.sort(function (a, b) {
     }
 })
 
+console.log(ordered)
+
 
 
 
