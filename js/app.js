@@ -60,3 +60,8 @@ console.log(ordered)
 
 // Array.prototype.map()
 // 4. Give us an array of the inventor first and last names
+
+const singleFullName = inventors.map(inventor => inventor.first + " " + inventor.last
+)
+
+console.log(singleFullName);
